@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace SmsTest.ApiClient.Http;
 
+/// <summary>
+/// Http клиент для внешнего api
+/// </summary>
 public class ApiHttpClient : IApiHttpClient
 {
     private readonly HttpClient _httpClient;
@@ -99,10 +102,8 @@ public class ApiHttpClient : IApiHttpClient
     /// <summary>
     /// Отправка заказа на сервер. (Команда "SendOrder")
     /// </summary>
-    /// <param name="order"></param>
     /// <remarks>a.kh: здесь я пробросил задачу, что бы если мы отправляем несколько 
-    /// заказов их можно было вызвать через Task.WhenAll(), например</remarks>
-    /// <returns></returns>
+    /// заказов их можно было вызвать через Task.WhenAll(), например.</remarks>
     public Task SendOrderAsync(OrderDto order)
         => CallExecuteCommandAsync<ApiResposeDto>("SendOrder", order);
 

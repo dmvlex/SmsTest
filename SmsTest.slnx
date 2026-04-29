@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="SmsTest.ApiClient.Grpc/SmsTest.ApiClient.Grpc.csproj" Id="8ebdaee2-38e7-4a57-a2d1-34fc714a874a" />
   <Project Path="SmsTest.ApiClient.Http/SmsTest.ApiClient.Http.csproj" Id="7a7f59f4-1068-45c0-a2e4-5f519b3f21bb" />
 </Solution>
