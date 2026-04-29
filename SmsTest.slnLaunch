@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Console + Server",
+    "Projects": [
+      {
+        "Path": "SmsTest.MockApi\\SmsTest.MockApi.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "SmsTest.ConsoleApp\\SmsTest.ConsoleApp.csproj",
+        "Action": "Start",
+        "DebugTarget": "SmsTest.ConsoleApp"
+      }
+    ]
+  }
+]

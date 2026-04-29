@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmsTest.ApiClient.Http.Dto;
+namespace SmsTest.Data.Models;
 
-/// <summary>
-/// Модель блюда
-/// </summary>
-public class DishDto
+public class Dish
 {
     public string Id { get; set; }
     public string Article { get; set; }
@@ -18,9 +15,4 @@ public class DishDto
     public bool IsWeighted { get; set; }
     public string FullPath { get; set; }
     public List<string> Barcodes { get; set; }
-
-    public override string ToString()
-    {
-        return $"{Name} – {Id} ({Article}) – {Price}";
-    }
 }

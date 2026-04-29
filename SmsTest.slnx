@@ -1,4 +1,7 @@
 <Solution>
   <Project Path="SmsTest.ApiClient.Grpc/SmsTest.ApiClient.Grpc.csproj" Id="8ebdaee2-38e7-4a57-a2d1-34fc714a874a" />
   <Project Path="SmsTest.ApiClient.Http/SmsTest.ApiClient.Http.csproj" Id="7a7f59f4-1068-45c0-a2e4-5f519b3f21bb" />
+  <Project Path="SmsTest.ConsoleApp/SmsTest.ConsoleApp.csproj" Id="c77453f3-bed3-4c9a-966f-4b180521b8ee" />
+  <Project Path="SmsTest.Data/SmsTest.Data.csproj" Id="0328bc15-a547-45af-898d-7ce03507a7b6" />
+  <Project Path="SmsTest.MockApi/SmsTest.MockApi.csproj" Id="83eaf794-5113-41a5-94f0-68c6fe8ff68c" />
 </Solution>
