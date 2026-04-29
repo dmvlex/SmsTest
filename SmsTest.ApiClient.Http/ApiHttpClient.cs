@@ -57,7 +57,7 @@ public class ApiHttpClient : IApiHttpClient
         where TResponse : ApiResposeDto
     {
         var requestContent = SerializeApiRequestBody(command, commandParameters);
-        var response = await _httpClient.PostAsync("/executecommand", requestContent);
+        var response = await _httpClient.PostAsync("executecommand", requestContent);
 
         //a.kh: В ТЗ сказано, что при любом запросе будет 200.
         //Но я решил не исключать вариант выпадения 500-тки при проблемах с сервером.
