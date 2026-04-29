@@ -75,7 +75,7 @@ public class ApiHttpClient : IApiHttpClient
                 $"Command: {command}. Result deserialization returned null.");
 
         if (!result.Success)
-            throw new HttpRequestException($"Command: {command}. Error Message:{result.ErrorMesage}");
+            throw new HttpRequestException($"Command: {command}. Error Message:{result.ErrorMessage}");
 
         return result;
     }

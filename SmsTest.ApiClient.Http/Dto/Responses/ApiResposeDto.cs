@@ -15,7 +15,7 @@ public class ApiResposeDto
 {
     public bool Success { get; set; }
     public string Command { get; set; }
-    public string ErrorMesage { get; set; }
+    public string ErrorMessage { get; set; }
 }
 
 /// <summary>
