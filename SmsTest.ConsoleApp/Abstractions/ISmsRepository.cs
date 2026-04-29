@@ -10,5 +10,6 @@ namespace SmsTest.ConsoleApp.Abstractions;
 public interface ISmsRepository
 {
     Task EnsureMigrateDatabaseAsync();
+    Task<bool> IsDishesExistAsync(IEnumerable<string> ids);
     Task UpsertDishesAsync(IEnumerable<Dish> dishes);
 }

@@ -47,6 +47,7 @@ internal class Program
                 options.UseNpgsql(builder.Configuration.GetConnectionString("AppDb"));
             });
 
+            builder.Services.AddSingleton<IOrderItemsParserService, OrderItemsParserService>();
             builder.Services.AddScoped<ISmsRepository, SmsRepository>();
 
             builder.Services.AddHostedService<AppWorker>();

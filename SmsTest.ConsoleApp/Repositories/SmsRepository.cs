@@ -76,4 +76,17 @@ public class SmsRepository : ISmsRepository
         await context.SaveChangesAsync();
     }
     
+    /// <summary>
+    /// Проверяет по списку id наличие блюд в базе
+    /// </summary>
+    /// <param name="id">id блюда</param>
+    /// <returns>False если нет блюда с таким id, иначе - true</returns>
+    public async Task<bool> IsDishesExistAsync(IEnumerable<string> ids)
+    {
+        await using var context = await _contextFactory.CreateDbContextAsync();
+
+        return await context.Dishes
+                            .Where(x => ids.Contains(x.Id))
+                            .AnyAsync();
+    }
 }
