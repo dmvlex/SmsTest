@@ -19,5 +19,5 @@ public class CommandParameters
 public class OrderItemRequest
 {
     public string Id { get; set; } = string.Empty;
-    public string Quantity { get; set; } = string.Empty;
+    public double Quantity { get; set; }
 }
